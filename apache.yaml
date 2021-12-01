@@ -1,6 +1,6 @@
 ---
 - name: Install git and clone a remote repository
-  hosts: webserver
+  hosts: all
   tasks:
     - name: Install git
       apt:
@@ -10,5 +10,5 @@
     - name: clone remote git repository
       git:
         repo: https://github.com/MysuraGit/maven.git
-        dest: /home/ubuntu/newgit  	
+        dest: /home/ubuntu/  	
 ...
