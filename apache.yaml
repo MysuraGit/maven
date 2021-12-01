@@ -1,0 +1,14 @@
+---
+- name: Install git and clone a remote repository
+  hosts: webserver
+  tasks:
+    - name: Install git
+      apt:
+       name: git
+       state: present
+       update_cache: yes
+    - name: clone remote git repository
+      git:
+        repo: https://github.com/MysuraGit/maven.git
+        dest: /home/ubuntu/newgit  	
+...
