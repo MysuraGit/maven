@@ -6,9 +6,5 @@
       apt:
        name: maven
        state: present
-       update_cache: yes
-    - name: clone remote git repository
-      git:
-        repo: https://github.com/MysuraGit/maven.git
-        dest: /home/ubuntu/  	
+       update_cache: yes  	
 ...
